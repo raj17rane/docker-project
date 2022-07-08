@@ -1,5 +1,5 @@
-FROM octava/php7.2-cli
-RUN mkdir /myfiles
-COPY index.php /myfiles
-WORKDIR /myfiles
+FROM php:7.2-cli
+RUN mkdir /myproject
+COPY index.php /myproject
+WORKDIR /myproject
 CMD ["php", "index.php"]
